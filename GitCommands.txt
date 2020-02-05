@@ -1,0 +1,22 @@
+	local init:	git init
+	stage:		git add .
+	commit:		git commit -m
+	
+	github init:	git remote add origin <github url> **
+			git push -u origin master **
+	
+	cloning:	git clone
+
+branching:	
+	init:		git branch <branch_name>
+	show all:	git branch
+	switch: 	git checkout <branch_name>
+	...make changes...
+	push:		git push -u origin <branch_name> **
+	... do online pull request and merge...
+	switch:		git checkout master
+	update:		git pull
+	delete:		git branch -d <branch_name>
+	push delete:	git push origin --delete <branch_name> **
+
+	delete local changes:	 git reset --hard
