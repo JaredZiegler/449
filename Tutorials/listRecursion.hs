@@ -1,4 +1,4 @@
-module listRecursion where
+module ListRecursion where
 
 my_length :: [a] -> Integer
 my_length [] = 0
