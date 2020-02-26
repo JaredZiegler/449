@@ -58,7 +58,8 @@ remove_first _ EmptyList = EmptyList
 remove_first n (Node value next)
     | n == value    = next
     | otherwise     = (Node value (remove_first n next))
-    
+
+--removes all instances of an integer from the LinkedList    
 remove_all :: Integer -> LinkedList -> LinkedList
 remove_all _ EmptyList = EmptyList
 remove_all n (Node value next)
